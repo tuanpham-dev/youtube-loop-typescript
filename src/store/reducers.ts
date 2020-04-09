@@ -37,17 +37,41 @@ const reducerMap: ReducerMap = {
   },
 
   [ADD_VIDEO]: (state, { payload: video }) => {
+    const maxId = Math.max(...state.videos.map(video => video.id), 0)
+
     return {
       ...state,
-      videos: [...state.videos, { ...video }]
+      videos: [...state.videos, { ...video, id: maxId + 1 }]
     }
   },
 
   [REMOVE_VIDEO]: (state, { payload: videoId }) => {
-    if (state.playingVideo !== videoId) {
-      return {
-        ...state,
-        playingVideo: videoId
+    const index = state.videos.findIndex(video => video.id === videoId)
+    let playingVideo: number | null = null
+
+    if (index !== null) {
+      if (state.playingVideo === videoId) {
+        if (state.videos.length <= 1) {
+          playingVideo = null
+        } else {
+          playingVideo = state.videos[index === state.videos.length - 1 ? 0 : index + 1].id
+        }
+      }
+
+      const videos = [...state.videos]
+      videos.splice(index, 1)
+
+      if (playingVideo !== null) {
+        return {
+          ...state,
+          videos,
+          playingVideo
+        }
+      } else {
+        return {
+          ...state,
+          videos
+        }
       }
     }
 

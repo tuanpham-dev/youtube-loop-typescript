@@ -1,0 +1,629 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`root reducer should handle ADD_VIDEO 1`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        230,
+      ],
+      "volume": 50,
+      "youtubeId": "nfWlot6h_JM",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle ADD_VIDEO 2`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+    Object {
+      "id": 5,
+      "range": Array [
+        0,
+        230,
+      ],
+      "volume": 50,
+      "youtubeId": "nfWlot6h_JM",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle ADD_VIDEO_BY_YOUTUBE_ID 1`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        null,
+        null,
+      ],
+      "volume": null,
+      "youtubeId": "nfWlot6h_JM",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle ADD_VIDEO_BY_YOUTUBE_ID 2`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        230,
+      ],
+      "volume": 50,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        null,
+        null,
+      ],
+      "volume": null,
+      "youtubeId": "nfWlot6h_JM",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle EDIT_VIDEO 1`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        230,
+      ],
+      "volume": 50,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle EDIT_VIDEO 2`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 123,
+      "range": Array [
+        null,
+        null,
+      ],
+      "volume": null,
+      "youtubeId": "",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle PLAY_FIRST_VIDEO 1`] = `
+Object {
+  "playingVideo": 1,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle PLAY_NEXT_VIDEO 1`] = `
+Object {
+  "playingVideo": 4,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle PLAY_NEXT_VIDEO 2`] = `
+Object {
+  "playingVideo": 1,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle PLAY_PREVIOUS_VIDEO 1`] = `
+Object {
+  "playingVideo": 2,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle PLAY_PREVIOUS_VIDEO 2`] = `
+Object {
+  "playingVideo": 4,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle PLAY_VIDEO 1`] = `
+Object {
+  "playingVideo": 3,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle REMOVE_VIDEO 1`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle REMOVE_VIDEO 2`] = `
+Object {
+  "playingVideo": 3,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle REMOVE_VIDEO 3`] = `
+Object {
+  "playingVideo": 2,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle UPDATE_VIDEOS 1`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [
+    Object {
+      "id": 1,
+      "range": Array [
+        0,
+        242,
+      ],
+      "volume": 100,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    Object {
+      "id": 2,
+      "range": Array [
+        0,
+        256,
+      ],
+      "volume": 100,
+      "youtubeId": "3tmd-ClpJxA",
+    },
+    Object {
+      "id": 3,
+      "range": Array [
+        0,
+        273,
+      ],
+      "volume": 100,
+      "youtubeId": "e-ORhEE9VVg",
+    },
+    Object {
+      "id": 4,
+      "range": Array [
+        0,
+        245,
+      ],
+      "volume": 100,
+      "youtubeId": "QcIy9NiNbmo",
+    },
+  ],
+}
+`;
+
+exports[`root reducer should handle UPDATE_VIDEOS 2`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [],
+}
+`;
+
+exports[`root reducer should return the initial state 1`] = `
+Object {
+  "playingVideo": null,
+  "videos": Array [],
+}
+`;
