@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions should create ADD_VIDEO when adding a video 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "id": 1,
+      "range": Array [
+        0,
+        230,
+      ],
+      "volume": 50,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    "type": "ADD_VIDEO",
+  },
+]
+`;
+
+exports[`actions should create ADD_VIDEO_BY_YOUTUBE_ID when adding video by youtube id 1`] = `
+Array [
+  Object {
+    "payload": "nfWlot6h_JM",
+    "type": "ADD_VIDEO_BY_YOUTUBE_ID",
+  },
+]
+`;
+
+exports[`actions should create EDIT_VIDEO when editing a video 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "id": 1,
+      "range": Array [
+        0,
+        230,
+      ],
+      "volume": 50,
+      "youtubeId": "nfWlot6h_JM",
+    },
+    "type": "EDIT_VIDEO",
+  },
+]
+`;
+
+exports[`actions should create PLAY_NEXT_VIDEO when playing next video 1`] = `
+Array [
+  Object {
+    "type": "PLAY_NEXT_VIDEO",
+  },
+]
+`;
+
+exports[`actions should create PLAY_NEXT_VIDEO when playing previous video 1`] = `
+Array [
+  Object {
+    "type": "PLAY_PREVIOUS_VIDEO",
+  },
+]
+`;
+
+exports[`actions should create PLAY_VIDEO when playing a video 1`] = `
+Array [
+  Object {
+    "payload": 1,
+    "type": "PLAY_VIDEO",
+  },
+]
+`;
+
+exports[`actions should create PLAY_VIDEO when stopping a video 1`] = `
+Array [
+  Object {
+    "payload": null,
+    "type": "PLAY_VIDEO",
+  },
+]
+`;
+
+exports[`actions should create REMOVE_VIDEO when removing a video 1`] = `
+Array [
+  Object {
+    "payload": 1,
+    "type": "REMOVE_VIDEO",
+  },
+]
+`;
+
+exports[`actions should create UPDATE_VIDEOS when updating videos 1`] = `
+Array [
+  Object {
+    "payload": Array [
+      Object {
+        "id": 1,
+        "range": Array [
+          0,
+          242,
+        ],
+        "volume": 100,
+        "youtubeId": "nfWlot6h_JM",
+      },
+      Object {
+        "id": 2,
+        "range": Array [
+          0,
+          256,
+        ],
+        "volume": 100,
+        "youtubeId": "3tmd-ClpJxA",
+      },
+      Object {
+        "id": 3,
+        "range": Array [
+          0,
+          273,
+        ],
+        "volume": 100,
+        "youtubeId": "e-ORhEE9VVg",
+      },
+      Object {
+        "id": 4,
+        "range": Array [
+          0,
+          245,
+        ],
+        "volume": 100,
+        "youtubeId": "QcIy9NiNbmo",
+      },
+    ],
+    "type": "UPDATE_VIDEOS",
+  },
+]
+`;
