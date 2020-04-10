@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should handle onClick function 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+>
+  onClick Button
+</button>
+`;
+
+exports[`Button should render color button 1`] = `
+<button
+  className="button button--blue"
+>
+  Blue Button
+</button>
+`;
+
+exports[`Button should render color button 2`] = `
+<button
+  className="button button--red"
+>
+  Red Button
+</button>
+`;
+
+exports[`Button should render normal button 1`] = `
+<button
+  className="button"
+>
+  Normal Button
+</button>
+`;
