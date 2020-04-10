@@ -1,0 +1,57 @@
+@import '../../sass/variables';
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  background-color: $color-gray;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid $color-gray;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  transition: color $transition-duration $transition-animation, background-color $transition-duration $transition-animation, border-color $transition-duration $transition-animation, box-shadow $transition-duration $transition-animation;
+
+  &:hover,
+  &:focus {
+    border-color: darken($color-gray, 10%);
+    background-color: darken($color-gray, 10%);
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($color-gray, 0.5);
+  }
+
+  &--red {
+    background-color: $color-red;
+    border-color: $color-red;
+
+    &:hover,
+    &:focus {
+      border-color: darken($color-red, 10%);
+      background-color: darken($color-red, 10%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba($color-red, 0.5);;
+    }
+  }
+
+  &--blue {
+    background-color: $color-blue;
+    border-color: $color-blue;
+
+    &:hover,
+    &:focus {
+      border-color: darken($color-blue, 10%);
+      background-color: darken($color-blue, 10%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba($color-blue, 0.5);;
+    }
+  }
+}
