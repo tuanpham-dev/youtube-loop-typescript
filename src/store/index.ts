@@ -8,3 +8,5 @@ export const configureStore = (initialState?: RootState): Store<RootState> => {
 
   return store
 }
+
+export default configureStore
