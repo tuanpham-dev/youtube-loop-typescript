@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Renderer should render with no control button 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    <div
+      className="container"
+    >
+      <a
+        className="header__logo"
+        href="/"
+      >
+        YouTube Loop
+      </a>
+      <div
+        className="header__input-group"
+      >
+        <input
+          className="header__input"
+          onChange={[Function]}
+          placeholder="Enter YouTube URL or Video ID"
+          type="text"
+          value=""
+        />
+        <div
+          className="header__input-group-append"
+        >
+          <button
+            className="button button--blue"
+            onClick={[Function]}
+          >
+            Go Loop!
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Header Renderer should render with play button 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    <div
+      className="container"
+    >
+      <a
+        className="header__logo"
+        href="/"
+      >
+        YouTube Loop
+      </a>
+      <div
+        className="header__controls"
+      >
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Play
+        </button>
+      </div>
+      <div
+        className="header__input-group"
+      >
+        <input
+          className="header__input"
+          onChange={[Function]}
+          placeholder="Enter YouTube URL or Video ID"
+          type="text"
+          value=""
+        />
+        <div
+          className="header__input-group-append"
+        >
+          <button
+            className="button button--blue"
+            onClick={[Function]}
+          >
+            Go Loop!
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Header Renderer should render with stop button 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    <div
+      className="container"
+    >
+      <a
+        className="header__logo"
+        href="/"
+      >
+        YouTube Loop
+      </a>
+      <div
+        className="header__controls"
+      >
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Stop
+        </button>
+      </div>
+      <div
+        className="header__input-group"
+      >
+        <input
+          className="header__input"
+          onChange={[Function]}
+          placeholder="Enter YouTube URL or Video ID"
+          type="text"
+          value=""
+        />
+        <div
+          className="header__input-group-append"
+        >
+          <button
+            className="button button--blue"
+            onClick={[Function]}
+          >
+            Go Loop!
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Header Renderer should render with stop, previous and next buttons 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    <div
+      className="container"
+    >
+      <a
+        className="header__logo"
+        href="/"
+      >
+        YouTube Loop
+      </a>
+      <div
+        className="header__controls"
+      >
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Stop
+        </button>
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Previous
+        </button>
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Next
+        </button>
+      </div>
+      <div
+        className="header__input-group"
+      >
+        <input
+          className="header__input"
+          onChange={[Function]}
+          placeholder="Enter YouTube URL or Video ID"
+          type="text"
+          value=""
+        />
+        <div
+          className="header__input-group-append"
+        >
+          <button
+            className="button button--blue"
+            onClick={[Function]}
+          >
+            Go Loop!
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
