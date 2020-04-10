@@ -7,7 +7,8 @@ import {
   UPDATE_VIDEOS,
   PLAY_VIDEO,
   PLAY_PREVIOUS_VIDEO,
-  PLAY_NEXT_VIDEO
+  PLAY_NEXT_VIDEO,
+  PLAY_FIRST_VIDEO
 } from './types'
 
 export const addVideoByYouTubeId = (youtubeId: string): ActionType => {
@@ -49,6 +50,12 @@ export const playVideo = (videoId: number): ActionType => {
   return {
     type: PLAY_VIDEO,
     payload: videoId
+  }
+}
+
+export const playFirstVideo = (): ActionType => {
+  return {
+    type: PLAY_FIRST_VIDEO
   }
 }
 

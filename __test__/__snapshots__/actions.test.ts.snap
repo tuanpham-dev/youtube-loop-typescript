@@ -43,6 +43,14 @@ Array [
 ]
 `;
 
+exports[`actions should create PLAY_FIRST_VIDEO when playing first video 1`] = `
+Array [
+  Object {
+    "type": "PLAY_FIRST_VIDEO",
+  },
+]
+`;
+
 exports[`actions should create PLAY_NEXT_VIDEO when playing next video 1`] = `
 Array [
   Object {
@@ -51,7 +59,7 @@ Array [
 ]
 `;
 
-exports[`actions should create PLAY_NEXT_VIDEO when playing previous video 1`] = `
+exports[`actions should create PLAY_PREVIOUS_VIDEO when playing previous video 1`] = `
 Array [
   Object {
     "type": "PLAY_PREVIOUS_VIDEO",

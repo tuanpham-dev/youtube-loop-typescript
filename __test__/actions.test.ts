@@ -2,12 +2,12 @@ import configureMockStore from 'redux-mock-store'
 import {
   addVideoByYouTubeId, addVideo, removeVideo,
   editVideo, updateVideos, playVideo,
-  playNextVideo, playPreviousVideo, stopVideo
+  playNextVideo, playPreviousVideo, stopVideo, playFirstVideo
 } from '../src/store/actions'
 import {
   ADD_VIDEO_BY_YOUTUBE_ID, ADD_VIDEO, REMOVE_VIDEO,
   EDIT_VIDEO, UPDATE_VIDEOS, PLAY_VIDEO,
-  PLAY_PREVIOUS_VIDEO, PLAY_NEXT_VIDEO
+  PLAY_PREVIOUS_VIDEO, PLAY_NEXT_VIDEO, PLAY_FIRST_VIDEO
 } from '../src/store/types'
 import mockData from './mock-data/video'
 
@@ -112,7 +112,20 @@ describe('actions', () => {
     expect(actions).toMatchSnapshot()
   })
 
-  it('should create PLAY_NEXT_VIDEO when playing previous video', () => {
+  it('should create PLAY_FIRST_VIDEO when playing first video', () => {
+    store = mockStore({})
+    store.dispatch(playFirstVideo())
+
+    const actions = store.getActions()
+    const expectedPayload = {
+      type: PLAY_FIRST_VIDEO
+    }
+
+    expect(actions).toEqual([expectedPayload])
+    expect(actions).toMatchSnapshot()
+  })
+
+  it('should create PLAY_PREVIOUS_VIDEO when playing previous video', () => {
     store = mockStore({})
     store.dispatch(playPreviousVideo())
 
