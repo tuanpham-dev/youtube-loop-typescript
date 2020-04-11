@@ -10,11 +10,14 @@ import {
   PLAY_NEXT_VIDEO,
   PLAY_FIRST_VIDEO
 } from './types'
+import getYouTubeVideoId from '../utils/getYouTubeVideoId'
 
 export const addVideoByYouTubeId = (youtubeId: string): ActionType => {
+  const youtubeVideoId = getYouTubeVideoId(youtubeId)
+
   return {
     type: ADD_VIDEO_BY_YOUTUBE_ID,
-    payload: youtubeId
+    payload: youtubeVideoId
   }
 }
 

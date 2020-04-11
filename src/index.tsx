@@ -4,9 +4,24 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
 import configureStore from './store'
 import App from './components/App/App'
-import './sass/global.sass'
+import './sass/global.scss'
+import { State } from './store/types';
+import { loadState, saveState } from './utils/localStorage';
+import throttle from 'lodash.throttle'
 
-const store = configureStore()
+const state: State = loadState()
+
+const initialState: State = {
+  videos: [],
+  playingVideo: null,
+  ...state
+}
+
+const store = configureStore(initialState)
+
+store.subscribe(throttle(() => {
+  saveState(store.getState())
+}, 1000))
 
 ReactDOM.render(
   <React.StrictMode>
