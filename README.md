@@ -1,3 +1,24 @@
+# YouTube Loop in React Redux (TypeScript)
+Repeat YouTube videos. Demo: https://tuanpham-dev.github.io/youtube-loop-typescript/
+
+![youtube-loop-react-redux-typescript](https://raw.githubusercontent.com/tuanpham-dev/youtube-loop-typescript/master/screenshot.png)
+
+## Features
+- ✅ Add video to the list
+- ✅ Remove video
+- ✅ Play first video
+- ✅ Play previous video
+- ✅ Play next video
+- ✅ Play next video when current video is ended
+- ✅ Play first video when last video is ended
+- ✅ Save the list to local storage for future sessions
+- ✅ Sort videos in the list
+- ✅ Drag & drop to sort video
+- ✅ Configure volume for each video
+- ✅ Configure start and end range for each video
+- ❌ Prevent videos from rerendering while sorting video
+- ❌ Play videos when tab is inactive
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -42,3 +63,27 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
